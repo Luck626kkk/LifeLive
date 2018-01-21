@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="io.vov.vitamio.demo"
+
+    android:versionCode="2"
+    android:versionName="1.1">
+
+    <uses-sdk tools:overrideLibrary="io.vov.vitamio"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:glEsVersion="0x00020000" android:required="true" />
+
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/vitamio_demo_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:label"
+        >
+        <!-- Don't forgot InitActivity -->
+        <activity
+
+            android:name="io.vov.vitamio.activity.InitActivity"
+            android:configChanges="orientation|screenSize|smallestScreenSize|keyboard|keyboardHidden|navigation"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".MediaPlayerDemo"
+            android:label="Media/MediaPlayer" >
+
+
+        </activity>
+        <activity
+            android:name=".MediaPlayerDemo_Video"
+            android:label="Media/MediaPlayer" >
+
+
+        </activity>
+        <activity
+            android:name="io.vov.vitamio.demo.MainActivity"
+            android:label="Media/MediaPlayer"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+
+
+        <activity
+            android:name=".Login">
+        </activity>
+
+        <activity android:name=".MainActivity2"
+            android:label="LiveLife"
+            android:theme="@style/Theme.AppCompat" >
+
+        </activity>
+
+        <activity android:name=".TestCamera"
+            android:theme="@style/Theme.AppCompat">
+
+        </activity>
+
+        <activity android:name=".AddMember"
+            android:label="LiveLife"
+            android:theme="@style/Theme.AppCompat">
+        </activity>
+        <activity android:name=".F_Search_Live"
+            android:theme="@style/Theme.AppCompat">
+        </activity>
+
+        <activity android:name=".F_Shopping_Buyer"
+            android:theme="@style/Theme.AppCompat">
+        </activity>
+        <activity android:name=".F_Shopping_Seller"
+            android:theme="@style/Theme.AppCompat">
+        </activity>
+        <activity android:name=".EditPassword"
+            android:theme="@style/Theme.AppCompat">
+        </activity>
+        <activity android:name=".SplashScreen"
+            android:theme="@style/Theme.AppCompat">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+
+    </application>
+
+</manifest>

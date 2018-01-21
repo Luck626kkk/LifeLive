@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "259477387726",
+    "firebase_url": "https://testfirebase-6a3a8.firebaseio.com",
+    "project_id": "testfirebase-6a3a8",
+    "storage_bucket": "testfirebase-6a3a8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:259477387726:android:bd6391fe98097701",
+        "android_client_info": {
+          "package_name": "com.example.luck.fcmdbdemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "259477387726-kv6b9biggf9o67g262o6bd8oehq24a27.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8t_gbax-fu9piVDTOPML7CgdA9yPxPNw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:259477387726:android:e861bf7c50cee5d9",
+        "android_client_info": {
+          "package_name": "io.vov.vitamio.demo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "259477387726-kv6b9biggf9o67g262o6bd8oehq24a27.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8t_gbax-fu9piVDTOPML7CgdA9yPxPNw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

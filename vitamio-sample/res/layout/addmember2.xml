@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/addmember">
+
+
+    <RelativeLayout
+        android:layout_marginLeft="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:layout_width="175dp"
+            android:layout_height="50dp"
+            android:inputType="textEmailAddress"
+            android:ems="30"
+            android:id="@+id/EdtEmail"
+            android:layout_marginTop="30dp"
+            android:hint="請輸入電子郵件"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="175dp"
+            android:layout_height="50dp"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/EdtPassword"
+            android:layout_below="@+id/EdtEmail"
+            android:layout_alignLeft="@+id/EdtEmail"
+            android:layout_alignStart="@+id/EdtEmail" />
+
+        <EditText
+            android:layout_width="175dp"
+            android:layout_height="50dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/EdtID"
+            android:layout_below="@+id/editText6"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="175dp"
+            android:layout_height="50dp"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/editText6"
+            android:layout_below="@+id/EdtPassword"
+            android:layout_alignLeft="@+id/EdtPassword"
+            android:layout_alignStart="@+id/EdtPassword" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:text="   帳號"
+            android:id="@+id/textView3"
+            android:textSize="20sp"
+            android:layout_alignBottom="@+id/EdtEmail"
+            android:layout_alignLeft="@+id/textView4"
+            android:layout_alignStart="@+id/textView4" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:text="   密碼"
+            android:id="@+id/textView4"
+            android:textSize="20sp"
+            android:layout_alignBottom="@+id/EdtPassword"
+            android:layout_toLeftOf="@+id/EdtPassword"
+            android:layout_toStartOf="@+id/EdtPassword" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:hint="請輸入密碼"
+            android:text="確認密碼"
+            android:id="@+id/textView5"
+            android:textSize="18sp"
+            android:layout_alignBottom="@+id/editText6"
+            android:layout_alignLeft="@+id/textView6"
+            android:layout_alignStart="@+id/textView6"
+            android:layout_alignRight="@+id/BtnClear"
+            android:layout_alignEnd="@+id/BtnClear" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="   暱稱"
+            android:id="@+id/textView6"
+            android:textSize="20sp"
+            android:layout_above="@+id/EdtBirthday"
+            android:layout_toLeftOf="@+id/EdtID"
+            android:layout_toStartOf="@+id/EdtID"
+            android:textColor="#ff000000" />
+
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:text="   生日"
+            android:id="@+id/txtName"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/EdtID"
+            android:layout_toStartOf="@+id/EdtID" />
+
+        <EditText
+            android:layout_width="175dp"
+            android:layout_height="50dp"
+            android:inputType="date"
+            android:ems="8"
+            android:hint="格式:年/月/日"
+            android:id="@+id/EdtBirthday"
+            android:layout_alignBottom="@+id/txtName"
+            android:layout_toRightOf="@+id/txtName"
+            android:layout_toEndOf="@+id/txtName" />
+
+        <EditText
+            android:layout_width="175dp"
+            android:layout_height="50dp"
+            android:inputType="phone"
+            android:ems="10"
+            android:id="@+id/EdtPhone"
+            android:layout_below="@+id/EdtBirthday"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="   手機"
+            android:id="@+id/textView9"
+            android:textSize="20sp"
+            android:layout_alignBottom="@+id/EdtPhone"
+            android:layout_toLeftOf="@+id/EdtPhone"
+            android:layout_toStartOf="@+id/EdtPhone"
+            android:textColor="#ff040404" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="填寫完成"
+            android:id="@+id/BtnGoLogin"
+            android:layout_marginBottom="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/EdtPhone"
+            android:layout_alignEnd="@+id/EdtPhone"
+            android:onClick="BtnGotoLogin" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="重新填寫"
+            android:id="@+id/BtnClear"
+            android:layout_alignTop="@+id/BtnGoLogin"
+            />
+
+
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/EdtPhone"
+            android:layout_alignLeft="@+id/textView9"
+            android:layout_alignStart="@+id/textView9"
+            android:layout_marginTop="34dp">>
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="   性別"
+                android:id="@+id/textView7"
+                android:textSize="20sp"
+                android:textColor="#ff000000" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="男"
+                android:id="@+id/RdbMan"
+                android:checked="true"
+                android:onClick="eventoClick" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="女"
+                android:id="@+id/RdbWoman"
+                android:checked="false"
+                android:onClick="eventoClick" />
+        </RadioGroup>
+
+    </RelativeLayout>
+</LinearLayout>

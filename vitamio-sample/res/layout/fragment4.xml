@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="143dp"
+        android:orientation="vertical"
+        android:layout_weight="0.05">
+        <LinearLayout
+            android:layout_width="325dp"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_weight="0.67"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="167dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/ic_launcher" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/txtName"
+                    android:layout_width="128dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:layout_weight="0.14"
+                    android:text="ID:12345656"
+                    android:textSize="20dip" />
+
+                <TextView
+                    android:id="@+id/textView8.1"
+                    android:layout_width="128dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:layout_weight="0.14"
+                    android:text="追隨者"
+                    android:textSize="20dip" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="223dp"
+        android:background="#DDDDDD"
+        android:orientation="vertical"
+        android:layout_weight="0.34">
+
+        <Button
+            android:id="@+id/button7.2"
+            android:layout_width="313dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="#FFFFFF"
+            android:text="版面設定"
+            android:textColor="@color/mediacontroller_bg" />
+
+        <Button
+            android:id="@+id/BtnEditPassword"
+            android:layout_width="313dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="#FFFFFF"
+            android:text="帳號設定"
+            android:textColor="@color/mediacontroller_bg" />
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="313dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="#FFFFFF"
+            android:text="登出"
+            android:textColor="@color/mediacontroller_bg" />
+    </LinearLayout>
+</LinearLayout>

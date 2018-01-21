@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="註冊會員"
+                android:textSize="30sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/editText1"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.10"
+                android:ems="10"
+
+                android:text="帳號:" />
+
+            <EditText
+                android:id="@+id/edtEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/editText2"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.10"
+                android:ems="10"
+
+                android:text="密碼" />
+
+            <EditText
+                android:id="@+id/EdtPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/editText3"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.10"
+                android:ems="10"
+
+                android:text="確認密碼" />
+
+            <EditText
+                android:id="@+id/EdtPassword2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/editText4"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.10"
+                android:ems="10"
+
+                android:text="暱稱" />
+
+            <EditText
+                android:id="@+id/EdtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/editText5"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.10"
+                android:ems="10"
+
+                android:text="帳戶" />
+
+            <EditText
+                android:id="@+id/EdtAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/editText6"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.10"
+                android:ems="10"
+
+                android:text="地址" />
+
+            <EditText
+                android:id="@+id/EdtAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/editText71"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.05"
+                android:ems="10"
+
+                android:text="生日" />
+
+            <TextView
+                android:id="@+id/txtDate"
+                android:layout_width="143dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+               />
+
+            <Button
+                android:id="@+id/btnDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.10"
+                android:text="選擇日期"
+                android:visibility="visible" />
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/editText7"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.10"
+                android:ems="10"
+
+                android:text="電話" />
+
+            <EditText
+                android:id="@+id/EdtPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/editText8"
+                android:layout_width="98dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+
+                android:text="介紹" />
+
+            <EditText
+                android:id="@+id/EdtText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/BtnOk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="BtnGotoLogin"
+                android:text="繼續" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
